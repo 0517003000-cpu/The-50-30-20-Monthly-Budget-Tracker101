@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Monthly Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Monthly Budget Tracker</h1>
+
+<div class="top">
+  Name: <input type="text">
+  Monthly Income: <input type="number" id="income">
+  <button onclick="calculate()">New Month</button>
+  <a href="https://0517003000-cpu.github.io/50-30-20-Monthly-Budgeting-Tracker/" target="_blank">Budget Calculator</a>
+</div>
+
+<div class="container">
+
+  <!-- ESSENTIAL -->
+  <div class="box">
+    <h2>Essential Expenses</h2>
+    <table>
+      <tr>
+        <td>Available Income</td>
+        <td id="essentialAvailable">Type here...</td>
+      </tr>
+      <tr>
+        <th>Expense</th>
+        <th>Cost</th>
+      </tr>
+
+      <tr><td></td><td><input class="essential"></td></tr>
+      <tr><td></td><td><input class="essential"></td></tr>
+      <tr><td></td><td><input class="essential"></td></tr>
+      <tr><td></td><td><input class="essential"></td></tr>
+      <tr><td></td><td><input class="essential"></td></tr>
+
+      <tr>
+        <td>Total</td>
+        <td id="essentialTotal">0</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td id="essentialStatus">-</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- NON ESSENTIAL -->
+  <div class="box">
+    <h2>Non Essential Expenses</h2>
+    <table>
+      <tr>
+        <td>Available Income</td>
+        <td id="nonAvailable">Type here...</td>
+      </tr>
+      <tr>
+        <th>Expense</th>
+        <th>Cost</th>
+      </tr>
+
+      <tr><td></td><td><input class="non"></td></tr>
+      <tr><td></td><td><input class="non"></td></tr>
+      <tr><td></td><td><input class="non"></td></tr>
+      <tr><td></td><td><input class="non"></td></tr>
+      <tr><td></td><td><input class="non"></td></tr>
+
+      <tr>
+        <td>Total</td>
+        <td id="nonTotal">0</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td id="nonStatus">-</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- SAVINGS -->
+  <div class="box">
+    <h2>Savings</h2>
+    <table>
+      <tr>
+        <td>Available Income</td>
+        <td id="savingsAvailable">Type here...</td>
+      </tr>
+      <tr>
+        <th>Saving Type</th>
+        <th>Amount</th>
+      </tr>
+
+      <tr><td></td><td><input class="savings"></td></tr>
+      <tr><td></td><td><input class="savings"></td></tr>
+      <tr><td></td><td><input class="savings"></td></tr>
+      <tr><td></td><td><input class="savings"></td></tr>
+      <tr><td></td><td><input class="savings"></td></tr>
+
+      <tr>
+        <td>Total</td>
+        <td id="savingsTotal">0</td>
+      </tr>
+      <!-- STATUS REMOVED ONLY HERE -->
+    </table>
+  </div>
+
+</div>
+
+<div class="advice">
+  <h2>Budget Advice</h2>
+  <p id="adviceText">-</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
