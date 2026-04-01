@@ -1,0 +1,56 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #d3d3d3;
+}
+
+.top {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 30%;
+  background: #eee;
+}
+
+h2 {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+input {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.advice {
+  margin: 40px auto;
+  width: 60%;
+  border: 3px solid black;
+  padding: 20px;
+  background: white;
+}
+
+a {
+  margin-left: 10px;
+  color: purple;
+  text-decoration: underline;
+}
